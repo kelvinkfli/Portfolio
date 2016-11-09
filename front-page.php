@@ -23,7 +23,13 @@
    <section class="about-me">
       <div class="about-content">
          <h1>about me</h1>
-         <p><?php the_field('about_me'); ?></p>
+         <div class="about-wrapper">
+            <p class="about-text"><?php the_field('about_me'); ?></p>
+            <?php $aboutpic = get_field('about_photo'); ?>
+            <div class="about-image">
+               <img src="<?php echo $aboutpic['url']; ?>"/>
+            </div>
+         </div>
       </div>
    </section>
    <section class="portfolio">
@@ -40,7 +46,7 @@
          </div>
          <div class="portfolio-description">
             <h2><?php the_field('portfolio-header'); ?></h2>
-            <p><?php the_field('portfolio_description'); ?></p>
+            <p><?php the_content(); ?></p>
             <ul class="tools-list">
                <?php
                   if( have_rows('tools_used')):
@@ -61,7 +67,7 @@
    </section>
    <section class="skills-section">
       <div class="skills-wrapper">
-         <div class="fluent-wrapper">
+         <div class="fluent-wrapper skills-style">
             <h1>Fluent</h1>
             <ul class="fluent-skills">
                <li><i class="devicon-html5-plain"></i><p>
@@ -90,37 +96,35 @@
                </p></li>
             </ul>
          </div>
-         <div class="tools-wrapper">
-            <h1>Tools</h1>
-            <ul class="fluent-tools">
-               <li><i class="devicon-git-plain"></i><p>
-                  git
-               </p></li>
-               <li><i class="devicon-github-plain"></i><p>
-                  github
-               </p></li>
-               <li><i class="devicons devicons-terminal"></i><p>
-                  bash
-               </p></li>
-               <li><i class="devicon-gulp-plain"></i><p>
-                  gulp
-               </p></li>
-               <!-- <li class="devicons devicons-git"></li>
-               <li class="devicons devicons-github_badge"></li>
-               <li class="devicons devicons-terminal"></li>
-               <li class="devicons devicons-gulp"></li> -->
-            </ul>
-         </div>
-         <div class="learning-wrapper">
-            <h1>Learning</h1>
-            <ul class="learning-skills">
-               <li><i class="devicon-nodejs-plain"></i><p>
-                  node
-               </p></li>
-               <li><i class="devicon-react-plain"></i><p>
-                  react
-               </p></li>
-            </ul>
+         <div class="skills-right">
+            <div class="tools-wrapper skills-style">
+               <h1>Tools</h1>
+               <ul class="tools-skills">
+                  <li><i class="devicon-git-plain"></i><p>
+                     git
+                  </p></li>
+                  <li><i class="devicon-github-plain"></i><p>
+                     github
+                  </p></li>
+                  <li><i class="devicons devicons-terminal"></i><p>
+                     bash
+                  </p></li>
+                  <li><i class="devicon-gulp-plain"></i><p>
+                     gulp
+                  </p></li>
+               </ul>
+            </div>
+            <div class="learning-wrapper skills-style">
+               <h1>Learning</h1>
+               <ul class="learning-skills">
+                  <li><i class="devicon-nodejs-plain"></i><p>
+                     node
+                  </p></li>
+                  <li><i class="devicon-react-plain"></i><p>
+                     react
+                  </p></li>
+               </ul>
+            </div>
          </div>
       </div
    </section>
