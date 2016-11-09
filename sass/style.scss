@@ -8,11 +8,12 @@
 */
 
 @import 'normalize';
-@import 'typography';
-@import 'navigation';
-@import 'sidebar';
-@import 'comments';
-@import 'footer';
+@import 'home';
+// @import 'typography';
+// @import 'navigation';
+// @import 'sidebar';
+// @import 'comments';
+// @import 'footer';
 /*
 ====================================
 Default Styling
@@ -41,11 +42,3 @@ body {
 .full {
 	width: 100%;
 }
-
-
-
-
-
-
-
-

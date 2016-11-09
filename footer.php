@@ -1,9 +1,3 @@
-<footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
-</footer>
-
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php
 /* Google Analytics! */
@@ -12,7 +6,7 @@
  g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
  s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
-
 <?php wp_footer(); ?>
 </body>
+</div>
 </html>
