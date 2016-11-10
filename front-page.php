@@ -66,64 +66,67 @@
       <?php wp_reset_postdata(); ?>
    </section>
    <section class="skills-section">
-      <div class="skills-wrapper">
-         <div class="fluent-wrapper skills-style">
-            <h1>Fluent</h1>
-            <ul class="fluent-skills">
-               <li><i class="devicon-html5-plain"></i><p>
-                  html5
-               </p></li>
-               <li><i class="devicon-css3-plain"></i><p>
-                  css3
-               </p></li>
-               <li><i class="devicon-sass-plain"></i><p>
-                  sass
-               </p></li>
-               <li><i class="devicon-javascript-plain"></i><p>
-                  javascript
-               </p></li>
-               <li><i class="devicon-jquery-plain"></i><p>
-                  jquery
-               </p></li>
-               <li><i class="devicon-python-plain"></i><p>
-                  python
-               </p></li>
-               <li><i class="devicon-wordpress-plain"></i><p>
-                  wordpress
-               </p></li>
-               <li><i class="devicons devicons-responsive"></i><p>
-                  responsive
-               </p></li>
-            </ul>
-         </div>
-         <div class="skills-right">
-            <div class="tools-wrapper skills-style">
-               <h1>Tools</h1>
-               <ul class="tools-skills">
-                  <li><i class="devicon-git-plain"></i><p>
-                     git
+      <div class="skills-full">
+         <h3>Skills</h3>
+         <div class="skills-wrapper">
+            <div class="fluent-wrapper skills-style">
+               <h1>Fluent</h1>
+               <ul class="fluent-skills">
+                  <li><i class="devicon-html5-plain"></i><p>
+                     html5
                   </p></li>
-                  <li><i class="devicon-github-plain"></i><p>
-                     github
+                  <li><i class="devicon-css3-plain"></i><p>
+                     css3
                   </p></li>
-                  <li><i class="devicons devicons-terminal"></i><p>
-                     bash
+                  <li><i class="devicon-sass-plain"></i><p>
+                     sass
                   </p></li>
-                  <li><i class="devicon-gulp-plain"></i><p>
-                     gulp
+                  <li><i class="devicon-javascript-plain"></i><p>
+                     javascript
+                  </p></li>
+                  <li><i class="devicon-jquery-plain"></i><p>
+                     jquery
+                  </p></li>
+                  <li><i class="devicon-python-plain"></i><p>
+                     python
+                  </p></li>
+                  <li><i class="devicon-wordpress-plain"></i><p>
+                     wordpress
+                  </p></li>
+                  <li><i class="devicons devicons-responsive"></i><p>
+                     responsive
                   </p></li>
                </ul>
             </div>
-            <div class="learning-wrapper skills-style">
-               <h1>Learning</h1>
-               <ul class="learning-skills">
-                  <li><i class="devicon-nodejs-plain"></i><p>
-                     node
-                  </p></li>
-                  <li><i class="devicon-react-plain"></i><p>
-                     react
-                  </p></li>
-               </ul>
+            <div class="skills-right">
+               <div class="tools-wrapper skills-style">
+                  <h1>Tools</h1>
+                  <ul class="tools-skills">
+                     <li><i class="devicon-git-plain"></i><p>
+                        git
+                     </p></li>
+                     <li><i class="devicon-github-plain"></i><p>
+                        github
+                     </p></li>
+                     <li><i class="devicons devicons-terminal"></i><p>
+                        bash
+                     </p></li>
+                     <li><i class="devicon-gulp-plain"></i><p>
+                        gulp
+                     </p></li>
+                  </ul>
+               </div>
+               <div class="learning-wrapper skills-style">
+                  <h1>Learning</h1>
+                  <ul class="learning-skills">
+                     <li><i class="devicon-nodejs-plain"></i><p>
+                        node
+                     </p></li>
+                     <li><i class="devicon-react-plain"></i><p>
+                        react
+                     </p></li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div
