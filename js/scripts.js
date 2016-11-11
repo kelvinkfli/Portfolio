@@ -40,7 +40,7 @@ function smoothScroll() {
 $(function(){
 	addOnScroll();
 	smoothScroll();
-	console.log('hello');
+	new Clipboard('.copy-button');
 });
 
 // function addOnScroll() {

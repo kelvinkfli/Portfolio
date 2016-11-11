@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
   <link href="http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
   <?php wp_head(); ?>
 </head>
 

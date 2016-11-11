@@ -1,13 +1,15 @@
 <?php get_header();  ?>
    <?php $heroImage = get_field('hero_image'); ?>
-   <section class="hero-section" style="background: url('<?php echo $heroImage['url']; ?>'); background-size: cover;">
+   <section class="hero-section">
+      <div class="hero-background" style="background: url('<?php echo $heroImage['url']; ?>'); background-size: cover;">
+
+      </div>
       <div class="hero-wrapper">
          <div class="hero-nav">
             <p>
-               logo
+               KL
             </p>
             <ul>
-               <li>home</li>
                <li>about</li>
                <li>portfolio</li>
                <li>skills</li>
@@ -58,14 +60,15 @@
                   endif;
                ?>
             </ul>
-            <a class="view-button" href="<?php the_field('portfolio_link'); ?>">VIEW LIVE</a>
+            <a target="_blank" class="view-button" href="<?php the_field('portfolio_link'); ?>">VIEW LIVE</a>
          </div>
       </div>
 
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>
    </section>
-   <section class="skills-section">
+   <section class="skills-section" style="background: url('<?php echo $heroImage['url']; ?>'); background-size: cover;">
+      <div class="skills-overlay"></div>
       <div class="skills-full">
          <h3>Skills</h3>
          <div class="skills-wrapper">
@@ -98,39 +101,74 @@
                   </p></li>
                </ul>
             </div>
-            <div class="skills-right">
-               <div class="tools-wrapper skills-style">
-                  <h1>Tools</h1>
-                  <ul class="tools-skills">
-                     <li><i class="devicon-git-plain"></i><p>
-                        git
-                     </p></li>
-                     <li><i class="devicon-github-plain"></i><p>
-                        github
-                     </p></li>
-                     <li><i class="devicons devicons-terminal"></i><p>
-                        bash
-                     </p></li>
-                     <li><i class="devicon-gulp-plain"></i><p>
-                        gulp
-                     </p></li>
-                  </ul>
-               </div>
-               <div class="learning-wrapper skills-style">
-                  <h1>Learning</h1>
-                  <ul class="learning-skills">
-                     <li><i class="devicon-nodejs-plain"></i><p>
-                        node
-                     </p></li>
-                     <li><i class="devicon-react-plain"></i><p>
-                        react
-                     </p></li>
-                  </ul>
-               </div>
+            <div class="tools-wrapper skills-style">
+               <h1>Tools</h1>
+               <ul class="tools-skills">
+                  <li><i class="devicon-git-plain"></i><p>
+                     git
+                  </p></li>
+                  <li><i class="devicon-github-plain"></i><p>
+                     github
+                  </p></li>
+                  <li><i class="devicons devicons-terminal"></i><p>
+                     bash
+                  </p></li>
+                  <li><i class="devicon-gulp-plain"></i><p>
+                     gulp
+                  </p></li>
+               </ul>
+            </div>
+            <div class="learning-wrapper skills-style">
+               <h1>Learning</h1>
+               <ul class="learning-skills">
+                  <li><i class="devicon-nodejs-plain"></i><p>
+                     node
+                  </p></li>
+                  <li><i class="devicon-react-plain"></i><p>
+                     react
+                  </p></li>
+               </ul>
             </div>
          </div>
-      </div
+      </div>
    </section>
+   <section class="footer">
+      <div class="footer-wrapper">
+         <h1>Let's chat</h1>
+         <div class="form-wrapper">
+            <form action="http://www.focuspocus.io/magic/kelvinkfli@gmail.com"
+            method="POST">
+              <div class="form-name form-part">
+                 <label for="fullName">Name</label>
+                 <input type="text" name="Full Name" id="fullName" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'" placeholder="Your name">
+              </div>
+              <div class="form-email form-part">
+                 <label for="email">Email</label>
+                 <input type="email" name="email" id="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email'" placeholder="Your email">
+              </div>
+              <div class="form-message form-part">
+                 <label for="message">Message</label>
+                 <textarea name="comments" id="message" cols=40 rows=10 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message'" placeholder="Your message"></textarea>
+              </div>
+              <input class="submit" type="submit" value="Send message">
+              <input type="reset" name="reset" class="reset" value="Reset">
+            </form>
+            <ul class="social-links">
+               <li><a target="_blank" href=""><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+               <li><a target="_blank" href=""><i class="fa fa-github"></i><span>Github</span></a></li>
+               <li><a target="_blank" href=""><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
+               <li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=kelvinkfli@gmail.com"><i class="fa fa-envelope"></i><span>Email</span></a><span><button class="copy-button" data-clipboard-target="#email-copy"><i class="fa fa-clipboard"></i></button></span></li>
+               <input id="email-copy" value="kelvinkfli@gmail.com">
+            </ul>
+         </div>
+      </div>
+   </section>
+   <footer class="copyright-footer">
+      <p>
+         <i class="fa fa-copyright"></i>
+         Kelvin Li 2016
+      </p>
+   </footer>
 <?php get_footer(); ?>
 
 <!-- <div class="portfolio-item">
@@ -143,3 +181,11 @@
       <button type="button">learn more</button>
    </div>
 </div> -->
+
+
+<!-- <p>Want to chat? kelvinkfli@gmail.com</p>
+<ul class="footer-links">
+   <li><a href=""><i class="fa fa-twitter"></i></a></li>
+   <li><a href=""><i class="fa fa-github"></i></a></li>
+   <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+</ul> -->
