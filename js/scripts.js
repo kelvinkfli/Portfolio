@@ -12,7 +12,7 @@ function addOnScroll() {
 		// 3. this variable stores the height of the nav bar
 		var navHeight = $('.hero-nav').height();
 		// 3. When the scroll distance is greater than the document - navbar...
-		if (scrollDistance > divHeight - navHeight) {
+		if (scrollDistance > divHeight - navHeight - 12) {
 			// 4. DO STUFF!
 			$('.hero-nav').addClass('hero-nav-fixed');
 		} else {
@@ -36,35 +36,31 @@ function smoothScroll() {
     });
 }
 
+function displayMenu(){
+	$('.hero-nav-hamburger li').on('click', function(){
+		$('.menu-overlay').toggleClass('menu-overlay-fix');
+		$('.blur').toggleClass('blur-fix');
+		$('#menu-toggle').toggleClass('toggled');
+	})
+	$('.menu-list li a').on('click', function(){
+		$('.menu-overlay').toggleClass('menu-overlay-fix');
+		$('.blur').toggleClass('blur-fix');
+		$('#menu-toggle').removeClass('toggled');
+	})
+}
+
+function menuHover(){
+	$('.menu-list').on('mouseover', '> li', function(){
+		$(this).css('color', 'rgb(117, 249, 238)')
+	}).on('mouseout', '> li', function(){
+		$(this).css('color', 'white');
+	})
+}
+
 
 $(function(){
 	addOnScroll();
 	smoothScroll();
-	var clipboard = new Clipboard('.copy-button');
-	// clipboard.on('success', function(e) {
-	// 	//do stuff
-	// });
+	displayMenu();
+	menuHover();
 });
-
-// function addOnScroll() {
-// 	//this is an event handler for the window object
-// 	$(window).scroll(function(){
-// 		//EVERYTHING in here runs as soon as a scroll is detected
-//
-// 		// 1. this variable stores the distance from the top of the window
-// 		var scrollDistance = $(window).scrollTop();
-//
-// 		// 2. this variable stores the height of a certain document
-// 		var divHeight = $('the-100vh-thing?').height();
-//
-// 		// 3. this variable stores the height of the nav bar
-// 		var navHeight = $('nav-class').height();
-// 		// 3. When the scroll distance is greater than the document - navbar...
-// 		if (scrollDistance > divHeight - navHeight) {
-// 			// 4. DO STUFF!
-// 			$('.nav-class').addClass('class-to-add');
-// 		} else {
-// 			$('.nav-class').removeClass('class-to-add');
-// 		}
-// 	})
-// }

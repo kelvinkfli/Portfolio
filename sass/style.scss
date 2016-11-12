@@ -9,6 +9,7 @@
 
 @import 'normalize';
 @import 'home';
+@import 'menu-button';
 // @import 'typography';
 // @import 'navigation';
 // @import 'sidebar';
@@ -41,4 +42,7 @@ body {
 
 .full {
 	width: 100%;
+}
+.blur-fix {
+	-webkit-filter: blur(5px);
 }

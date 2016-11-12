@@ -19,6 +19,7 @@ $purpletwo: #7C76B3;
 
 a {
    outline: 0;
+   cursor: pointer;
    &:focus {
       outline: 0;
    }
@@ -63,21 +64,30 @@ p {
    left: 0;
    color: white;
    text-transform: uppercase;
-   background: black;
+   background: transparent;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
-   padding: 5px 40px;
+   padding: 6px 1%;
    z-index: 100;
    letter-spacing: 2px;
+   // transition: padding 0.6s;
+   transition: background 0.6s;
    p {
       width: 7%;
       // text-align: center;
       // background: $aqua;
       color: $aqua;
       font-size: 1.5rem;
-      font-weight: 900;;
+      font-weight: 900;
+      letter-spacing: 5px;
+   }
+   a.hero-reload {
+      color: $aqua;
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 1px;
    }
    ul {
       // flex: 1 0 90%;
@@ -88,6 +98,7 @@ p {
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap;
+      font-size: 0.9rem;
       li {
          margin: 0 2%;
          a {
@@ -106,9 +117,11 @@ p {
 }
 
 .hero-nav-fixed {
+   background: #1c2033;
    position: fixed;
    bottom: 100%;
    transform: translateY(100%);
+   // padding: 2px 40px;
 }
 
 .hero-nav .hero-nav-hamburger-hide {
@@ -137,6 +150,24 @@ p {
       h4 {
          font-family: 'Raleway', sans-serif;
          letter-spacing: 4px;
+      }
+      ul {
+         list-style-type: none;
+         padding: 0;
+         margin: 0;
+         li {
+            display: inline;
+            margin-right: 25px;
+            font-size: 1.2rem;
+            a {
+               text-decoration: none;
+               color: inherit;
+               transition: 0.6s;
+               &:hover {
+                  color: $aqua;
+               }
+            }
+         }
       }
    }
 }
@@ -524,11 +555,11 @@ p {
 }
 
 .copyright-footer {
-   background: black;
+   background: #1c2033;
    color: white;
    text-align: center;
    text-transform: uppercase;
-   padding: 2.25% 0;
+   padding: 30px 0;
    font-size: 0.8rem;
    letter-spacing: 3px;
 }
@@ -627,7 +658,7 @@ p {
    position: absolute;
    // right: 15px;
 }
-@media (max-width: 550px) {
+@media (max-width: 565px) {
    // .form-wrapper form .submit {
    //    margin-bottom: 25px;
    // }
@@ -675,5 +706,8 @@ p {
    }
    .hero-nav .hero-nav-hamburger-hide {
       display: flex;
+   }
+   .hero-content h4 {
+      font-size: 0.8rem;
    }
 }
