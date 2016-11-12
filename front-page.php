@@ -1,6 +1,6 @@
 <?php get_header();  ?>
    <?php $heroImage = get_field('hero_image'); ?>
-   <section class="hero-section">
+   <section id="hero-full" class="hero-section">
       <div class="hero-background" style="background: url('<?php echo $heroImage['url']; ?>'); background-size: cover;">
 
       </div>
@@ -9,11 +9,14 @@
             <p>
                KL
             </p>
-            <ul>
-               <li>about</li>
-               <li>portfolio</li>
-               <li>skills</li>
-               <li>contact</li>
+            <ul class="hero-nav-items">
+               <li><a href="#about-full">About</a></li>
+               <li><a href="#portfolio-full">Work</a></li>
+               <li><a href="#skills-full">Skills</a></li>
+               <li><a href="#contact-full">Contact</a></li>
+            </ul>
+            <ul class="hero-nav-hamburger hero-nav-hamburger-hide">
+               <li><i class="fa fa-bars"></i></li>
             </ul>
          </div>
          <div class="hero-content">
@@ -22,7 +25,7 @@
          </div>
       </div>
    </section>
-   <section class="about-me">
+   <section id="about-full" class="about-me">
       <div class="about-content">
          <h1>about me</h1>
          <div class="about-wrapper">
@@ -34,7 +37,7 @@
          </div>
       </div>
    </section>
-   <section class="portfolio">
+   <section id="portfolio-full" class="portfolio">
       <?php $portfolioArgs = array('post_type' => 'portfolio');
 
       $portfolioLoop = new WP_Query($portfolioArgs);
@@ -67,7 +70,7 @@
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>
    </section>
-   <section class="skills-section" style="background: url('<?php echo $heroImage['url']; ?>'); background-size: cover;">
+   <section id="skills-full" class="skills-section" style="background: url('<?php echo $heroImage['url']; ?>'); background-size: cover;">
       <div class="skills-overlay"></div>
       <div class="skills-full">
          <h3>Skills</h3>
@@ -132,7 +135,7 @@
          </div>
       </div>
    </section>
-   <section class="footer">
+   <section id="contact-full" class="footer">
       <div class="footer-wrapper">
          <h1>Let's chat</h1>
          <div class="form-wrapper">
@@ -157,7 +160,7 @@
                <li><a target="_blank" href=""><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
                <li><a target="_blank" href=""><i class="fa fa-github"></i><span>Github</span></a></li>
                <li><a target="_blank" href=""><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
-               <li><a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=kelvinkfli@gmail.com"><i class="fa fa-envelope"></i><span>Email</span></a><span><button class="copy-button" data-clipboard-target="#email-copy"><i class="fa fa-clipboard"></i></button></span></li>
+               <li><a class="email-message" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=kelvinkfli@gmail.com"><i class="fa fa-envelope"></i><span>Email</span></a><span class="email-buttons"><button class="copy-button" data-clipboard-target="#email-copy"><i class="fa fa-clipboard"></i></button></span></li>
                <input id="email-copy" value="kelvinkfli@gmail.com">
             </ul>
          </div>
