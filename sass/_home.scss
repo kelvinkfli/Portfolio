@@ -88,6 +88,7 @@ p {
       font-size: 1.5rem;
       font-weight: 900;
       letter-spacing: 1px;
+      width: 7%;
    }
    ul {
       // flex: 1 0 90%;
@@ -572,7 +573,7 @@ p {
 
    .about-me {
       .about-content {
-         padding: 10% 5%;
+         padding: 20% 5%;
       }
    }
    .portfolio-item {
@@ -580,7 +581,7 @@ p {
       flex-direction: column-reverse;
       padding: 0;
       .portfolio-description {
-         padding: 10% 3% 0% 3%;
+         padding: 20% 3% 5% 3%;
       }
       .portfolio-image {
          margin: 0;
@@ -595,11 +596,11 @@ p {
    }
    .skills-section {
       .skills-full {
-         padding: 10% 5% 7% 5%;
+         padding: 20% 5% 17% 5%;
       }
    }
    .footer-wrapper {
-      padding: 10% 5% 13% 5%;
+      padding: 20% 5% 18% 5%;
    }
    .skills-section .skills-style ul li {
       width: 19%;
