@@ -10,7 +10,7 @@
       </div>
    </section>
    <div class="hero-nav">
-      <a class="hero-reload">
+      <a href="." class="hero-reload">
          KL
       </a>
       <ul class="hero-nav-items">
@@ -87,7 +87,10 @@
                      endif;
                   ?>
                </ul>
-               <a target="_blank" class="view-button" href="<?php the_field('portfolio_link'); ?>">VIEW LIVE</a>
+               <div class="portfolio-button">
+                  <a target="_blank" class="view-button" href="<?php the_field('portfolio_link'); ?>">VIEW LIVE</a>
+                  <a target="_blank" class="git-button" href="<?php the_field('github_link'); ?>">GITHUB</a>
+               </div>
             </div>
          </div>
 

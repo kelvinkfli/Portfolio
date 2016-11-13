@@ -193,7 +193,7 @@ ul.menu li:hover ul.sub-menu {
    z-index: 100;
    position: fixed;
    height: 100%;
-   width: 100%;
+   width: 100vw;
    background: rgba(51, 56, 85, 0.85);
    @include flex;
    opacity: 0;
