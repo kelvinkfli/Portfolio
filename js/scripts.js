@@ -10,9 +10,9 @@ function addOnScroll() {
 		var divHeight = $('.hero-section').height();
 
 		// 3. this variable stores the height of the nav bar
-		var navHeight = $('.hero-nav').height();
+		var navHeight = $('.hero-nav').outerHeight();
 		// 3. When the scroll distance is greater than the document - navbar...
-		if (scrollDistance > divHeight - navHeight - 12) {
+		if (scrollDistance > divHeight - navHeight) {
 			// 4. DO STUFF!
 			$('.hero-nav').addClass('hero-nav-fixed');
 		} else {
@@ -63,4 +63,12 @@ $(function(){
 	smoothScroll();
 	displayMenu();
 	menuHover();
+
+	var bg = jQuery("body");
+	jQuery(window).resize("resizeBackground");
+	function resizeBackground() {
+	    bg.height(jQuery(window).height());
+	}
+	resizeBackground();
+
 });

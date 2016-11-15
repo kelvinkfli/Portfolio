@@ -71,7 +71,7 @@
          <div class="portfolio-item">
             <div class="portfolio-image">
                <?php $portImage = get_field('portfolio_image'); ?>
-               <img src="<?php echo $portImage['url']; ?>" alt="" />
+               <a target="_blank" href="<?php the_field('portfolio_link'); ?>"><img src="<?php echo $portImage['url']; ?>" alt="" /></a>
             </div>
             <div class="portfolio-description">
                <h2><?php the_field('portfolio-header'); ?></h2>
@@ -165,6 +165,10 @@
       <section id="contact-full" class="footer">
          <div class="footer-wrapper">
             <h1>Let's chat</h1>
+            <!-- <p class="email-full">
+               <a class="email-message" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=kelvinkfli@gmail.com"><i class="fa fa-envelope"></i></a><span>kelvinkfli@gmail.com</span>
+               <input id="email-copy" value="kelvinkfli@gmail.com"> -->
+            </p>
             <div class="form-wrapper">
                <form action="http://www.focuspocus.io/magic/kelvinkfli@gmail.com"
                method="POST">
@@ -187,8 +191,8 @@
                   <li><a target="_blank" href="https://twitter.com/kelvincodes"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
                   <li><a target="_blank" href="https://github.com/kelvinkfli"><i class="fa fa-github"></i><span>Github</span></a></li>
                   <li><a target="_blank" href="https://www.linkedin.com/in/kelvin-li-b6b0b3126?trk=hp-identity-name"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
-                  <li><a class="email-message" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=kelvinkfli@gmail.com"><i class="fa fa-envelope"></i><span>Email</span></a><span class="email-buttons"><button class="copy-button" data-clipboard-target="#email-copy"><i class="fa fa-clipboard"></i></button></span></li>
-                  <input id="email-copy" value="kelvinkfli@gmail.com">
+                  <li><a class="email-message" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=kelvinkfli@gmail.com"><i class="fa fa-envelope"></i><span>kelvinkfli@gmail.com</span></a></li>
+                  <!-- <input id="email-copy" value="kelvinkfli@gmail.com"> -->
                </ul>
             </div>
          </div>
